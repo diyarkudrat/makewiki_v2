@@ -40,6 +40,20 @@ class PageCreateView(CreateView):
         form = PageForm(request.POST)
         if form.is_valid():
             page = form.save()
-            return HttpResponseRedirect(reverse_lazy('pages:detail', args=[page.id]))
+            return HttpResponseRedirect(reverse_lazy('wiki-list-page'))
 
         return render(request, 'new.html', {'form': form})
+
+# class PageDeleteView(DeleteView):
+#     """ Renders a specific page based on it's slug."""
+#     model = Page
+#
+#     def get(self, request, slug):
+#         """ Returns a specific wiki page by slug. """
+#         page = self.get_queryset().get(slug__iexact=slug)
+#         return render(request, 'delete.html', {
+#           'page': page
+#         })
+#
+#     def get_success_url(self):
+#         return reverse_lazy('wiki-list-page')
