@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1yct-t!2bnkgc7j59z+9cdd2k)@y+ftqor$!aya()3if^cnlo-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'makewikiv2-dk.herokuapp.com']
 
@@ -133,7 +133,7 @@ STATICFILES_DIRS = [
  os.path.join(BASE_DIR, "static"),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 # wiki app settings
