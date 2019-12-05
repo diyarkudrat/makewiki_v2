@@ -25,7 +25,7 @@ SECRET_KEY = '1yct-t!2bnkgc7j59z+9cdd2k)@y+ftqor$!aya()3if^cnlo-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'makewikiv2-dk.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'makewiki-dk.herokuapp.com']
 
 
 # Application definition
